@@ -156,11 +156,12 @@ question = st.text_area("Question Prompt", placeholder="Enter your question here
 col1, col2 = st.columns(2)
 with col1:
     option_a = st.text_input("Option A", placeholder="Enter option A")
-    option_c = st.text_input("Option C", placeholder="Enter option C")
-    option_e = st.text_input("Option E", placeholder="Enter option E")
-with col2:
     option_b = st.text_input("Option B", placeholder="Enter option B")
+    option_c = st.text_input("Option C", placeholder="Enter option C")
+    
+with col2:
     option_d = st.text_input("Option D", placeholder="Enter option D")
+    option_e = st.text_input("Option E", placeholder="Enter option E")
 
 if st.button("Predict Best Answers"):
     options = [option_a, option_b, option_c, option_d, option_e]
